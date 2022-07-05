@@ -3,7 +3,7 @@ package me.study.springdb.service;
 import lombok.extern.slf4j.Slf4j;
 import me.study.springdb.domain.Member;
 import me.study.springdb.repository.MemberRepository;
-import me.study.springdb.repository.MemberRepositoryV4_1;
+import me.study.springdb.repository.MemberRepositoryV4_2;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -47,7 +47,7 @@ class MemberServiceV4Test {
 
         @Bean
         MemberRepository memberRepository() {
-            return new MemberRepositoryV4_1(dataSource);
+            return new MemberRepositoryV4_2(dataSource);
         }
 
         @Bean
